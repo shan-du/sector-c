@@ -8,6 +8,13 @@
 	min-width:0;
 }
 
+header ul a {
+	padding-top:3px;
+	color:#FFF;
+	font-size:0.9em;
+	line-height:1.1;
+}
+
 #profile {
 	display:none;
 	color:#000;
