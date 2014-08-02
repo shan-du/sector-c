@@ -1,9 +1,3 @@
-@media print, screen and (max-width: 740px) {
-}
-
-@media print, screen and (max-width:580px) {
-}
-
 body {
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -134,7 +128,12 @@ header ul a {
 
 .timeline .placement-info .duration .arrow {
 	display:block;
+	font-size:0.7em;
 	text-align:center;
+}
+
+.timeline .placement-info .duration .arrow::after {
+	content:"|";
 }
 
 .timeline .placement-info .placement-desc ul,
@@ -157,3 +156,49 @@ header ul a {
 	text-decoration:underline;
 }
 
+@media print, screen and (max-width: 740px) {
+	.personal-info .bracelet {
+		display:none;
+	}
+	
+	.personal-info .name {
+		margin-left:0;
+		margin-right:0;
+	}
+	
+	.personal-info .degree h2 {
+		font-size:1em;
+	}
+
+	.personal-info .contact h2 {
+		font-size:1em;
+	}
+	
+	.timeline .placement-info .placement-desc ul {
+		padding-left:0;
+	}
+	
+	.timeline .placement-info .duration .from,
+	.timeline .placement-info .duration .to {
+		display:inline-block;
+		border:none;
+		font-size:1em;
+		text-align:left;
+	}
+	
+	.timeline .placement-info .duration .from {
+		padding-left:0;
+	}
+	
+	.timeline .placement-info .duration .arrow {
+		display:inline-block;
+		font-size:1em;
+	}
+	
+	.timeline .placement-info .duration .arrow::after {
+		content:"--";
+	}
+}
+
+@media print, screen and (max-width:580px) {
+}
