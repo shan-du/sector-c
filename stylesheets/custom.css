@@ -81,13 +81,15 @@ header ul a {
 .personal-info .degree h2 {
 	font-size:0.89em;
 	line-height:1.3;
+	white-space:nowrap;
 }
 
 .personal-info .contact h2 {
 	color:#08F !important;
-	font-size:0.85em;
+	font-size:0.65em;
 	font-style:italic;
 	line-height:1.4;
+	white-space:nowrap;
 }
 
 .content .content-title {
@@ -102,18 +104,19 @@ header ul a {
 	text-align:center;
 }
 
-.timeline .placement {
+.timeline .placement-name {
 	border-bottom:1px solid #999;
 	font-size:1.2em;
 }
 
-.timeline .job-info .position {
+.timeline .placement-info .position {
 	margin-bottom:10px;
 	font-size:1em;
 }
 
-.timeline .job-info .duration .from,
-.timeline .job-info .duration .to {
+.timeline .placement-info .duration .from,
+.timeline .placement-info .duration .to {
+	display:block;
 	padding:5px;
 	border:1px solid #999;
 	border-radius:5px;
@@ -121,28 +124,36 @@ header ul a {
 	text-align:center;
 }
 
-.timeline .job-info .duration .from {
+.timeline .placement-info .duration .from {
 	color:#555;
 }
 
-.timeline .job-info .duration .to {
+.timeline .placement-info .duration .to {
 	border-color:#555;
 }
 
-.timeline .job-info .duration .arrow {
+.timeline .placement-info .duration .arrow {
+	display:block;
 	text-align:center;
 }
 
-.timeline .job-info .job-desc ul,
-.timeline .job-info .job-desc ul li {
+.timeline .placement-info .placement-desc ul,
+.timeline .placement-info .placement-desc ul li {
 	margin:0;
 	list-style:none;
 }
 
-.timeline .job-info .job-desc ul {
+.timeline .placement-info .placement-desc ul {
 	padding-left:25px;
 }
 
-.timeline .job-info .job-desc ul li {
+.timeline .placement-info .placement-desc ul li {
 	margin-bottom:5px;
 }
+
+.timeline .placement-info .placement-desc a:hover,
+.timeline .placement-info .placement-desc a:focus,
+.timeline .placement-info .placement-desc a:active {
+	text-decoration:underline;
+}
+
