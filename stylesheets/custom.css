@@ -13,8 +13,11 @@ header ul a {
 	min-width:0;
 }
 
-#profile {
+#intro {
 	display:none;
+}
+
+#profile {
 	color:#000;
 }
 
