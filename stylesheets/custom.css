@@ -150,7 +150,8 @@ header ul a {
 }
 
 .timeline .placement-info .placement-desc ul li {
-	margin-bottom:5px;
+	margin-bottom:7px;
+	line-height:1.3em;
 }
 
 .timeline .placement-info .placement-desc a:hover,
