@@ -15,8 +15,6 @@
     <iframe src="https://shan-du.github.io/sector-c/test/sub-test" width="640" height="480"></iframe>
   </body>
   <script>
-    console.log('outer window console log');
-    console.log(window.parent);
-    console.log(window.top);
+    console.log('<<< outer window status = ', window === window.parent);
   </script>
 </html>
