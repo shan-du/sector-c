@@ -5,16 +5,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Inner Test</title>
+    <style>
+      .code {
+        min-height: 100px;
+        min-width: 200px;
+        border: 1px solid blue;
+      }
+    </style>
   </head>
   
   <body>
     <div class="wrapper">
       Inner Element
     </div>
+    <pre id="window1" class="code"></pre>
+    <pre id="window2" class="code"></pre>
   </body>
   <script>
-    console.log('>>> inner window console log <<<');
-    console.log(window.parent);
-    console.log(window.top);
+    var box1 = document.getElementById('window1');
+    box1.innerHTML = JSON.stringify(window.parent.location, undefined, 2);
+
+    var box1 = document.getElementById('window2');
+    box2.innerHTML = window.parent === window
   </script>
 </html>
