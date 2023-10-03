@@ -15,17 +15,19 @@
   </head>
   
   <body>
-    <div class="wrapper">
-      Inner Element
-    </div>
+    <div class="wrapper">window</div>
     <pre id="window1" class="code"></pre>
+    <hr />
+    <div class="wrapper">window.parent</div>
     <pre id="window2" class="code"></pre>
   </body>
   <script>
     var box1 = document.getElementById('window1');
-    box1.innerHTML = JSON.stringify(window.parent.location, undefined, 2);
+    box1.innerHTML = JSON.stringify(window.location, undefined, 2);
 
-    var box1 = document.getElementById('window2');
-    box2.innerHTML = window.parent === window
+    var box2 = document.getElementById('window2');
+    box2.innerHTML = JSON.stringify(window.parent.location, undefined, 2);
+
+    console.log('>>> inner window status: ', window.parent === window)
   </script>
 </html>
